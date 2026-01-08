@@ -1,13 +1,13 @@
 {% set name = "iterable-io" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: iterable-io
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/i/iterable-io/iterable-io-{{ version }}.tar.gz
-  sha256: fb9e1b739587a9ba0d5c60a3e1eb71246761583bc9f18b3c35bb112b44b18c3c
+  url: https://pypi.org/packages/source/i/iterable-io/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 55db222c5914097a8508dc722f8db6112f636a04a8acb94ee6589d9b14bd4bb7
 
 build:
   noarch: python
