@@ -1,5 +1,5 @@
 {% set name = "iterable-io" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: iterable-io
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/iterable-io/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 55db222c5914097a8508dc722f8db6112f636a04a8acb94ee6589d9b14bd4bb7
+  sha256: 27ff905fd35ff3c2d3cb5859a0c5b833c2d969c3dda03d1d0cebb0f18069d95e
 
 build:
   noarch: python
@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - hatchling
     - pip
-    - setuptools
   run:
     - python >={{ python_min }}
 
